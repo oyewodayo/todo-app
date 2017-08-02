@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Todo App</title>
+   
+    <link rel="stylesheet" href="css/style.css" type="text/css">    
+  </head>
+  <body>
+    <div class="main">
+     <fieldset>
+      <legend>My Todo App</legend>
+     
+        <label for="newtask">Add what todo</label>
+        <input id="newtask" type="text">
+        <button>Add</button>
+      <hr>
+      <h3>Todo</h3>
+      <ul id="incompletetasks">
+
+        <li class="editMode">
+          <input type="checkbox">
+          <label>Reading Time</label>
+          <input type="text" value="Reading Time">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+
+        <li>
+          <input type="checkbox">
+          <label class="todo">Cooking Time</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+        
+        
+      </ul>
+      
+      <h3>Completed</h3>
+      <ul id="completedtasks">
+        <li>
+          <input type="checkbox" checked>
+          <label class="todo">House Fellowship</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+
+        <li>
+          <input type="checkbox" checked>
+          <label class="todo">Guitar rehearsal</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+
+      </fieldset>
+    </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+</html>
