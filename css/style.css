@@ -28,6 +28,16 @@ li, h3 {
   clear:both;
   list-style:none;
 }
+h3,
+label[for='newtask'] {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  
+  padding: 30px 0 10px;
+  margin: 0;
+  ;
+}
 input, button {
   outline: none;
 }
@@ -44,16 +54,7 @@ button:hover {
   color: #333;
 }
 
-h3,
-label[for='newtask'] {
-  color: #333;
-  font-weight: 700;
-  font-size: 15px;
-  
-  padding: 30px 0 10px;
-  margin: 0;
-  ;
-}
+
 input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -93,18 +94,18 @@ li {
   border-bottom: 1px solid #eee;
 }
 li input[type="checkbox"] {
-  margin: 0 10px;
   position: relative;
+  margin: 0 10px;
   top: 15px;
 }
 li label {
+  width: 240px;
   font-size: 18px;
   line-height: 40px;
-  width: 237px;
   padding: 0 0 0 11px;
 }
 li input[type="text"] {
-  width: 226px;
+  width: 225px;
 }
 li .delete:hover {
   color: #CF2323;
@@ -112,8 +113,9 @@ li .delete:hover {
 
 
 #completedtasks label {
+  color: red;
   text-decoration: line-through;
-  color: #888;
+  
 }
 
 ul li input[type=text] {
